@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/shanidlib"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/shanidlib"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".favouriteBooksActivity"
+            android:exported="false"
+            android:label="@string/activity_favourite_books"/>
+        <activity
+            android:name=".currentlyReadingActivity"
+            android:exported="false"
+            android:label="@string/activity_currently_reading"
+            />
+        <activity
+            android:name=".WantToReadActivity"
+            android:exported="false"
+            android:label="@string/activity_want_read"/>
+        <activity
+            android:name=".AlreadyReadBookActivity"
+            android:exported="false"
+            android:label="@string/activity_already_read"/>
+        <activity
+            android:name=".BookActivity"
+            android:exported="false"
+            android:label="@string/activity_book"/>
+        <activity
+            android:name=".AllBooksActivity"
+            android:exported="false"
+            android:label="@string/activity_all_books"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
